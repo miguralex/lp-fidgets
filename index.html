@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LushaStudio — набор вязаных фиджетов 6-в-1</title>
+  <meta name="description" content="Набор из 6 вязаных тактильных фиджетов ручной работы. Чтобы занять руки, мягко снять напряжение и легче удерживать внимание. Доставка по Украине." />
+
+  <meta property="og:title" content="LushaStudio — набор вязаных фиджетов 6-в-1" />
+  <meta property="og:description" content="6 вязаных фиджетов ручной работы в одном наборе. Уютная тактильность и взрослый минималистичный стиль. Доставка по Украине." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://placehold.co/1200x630/FFFBEB/D97706?text=LushaStudio+6-in-1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#D97706',
+            primaryHover: '#B45309',
+            secondary: '#10B981',
+            bgMain: '#FFFBEB',
+            bgAlt: '#FEF3C7',
+            textHead: '#451A03',
+            textBody: '#374151',
+            border: '#FDE68A',
+          },
+          fontFamily: {
+            serif: ['Merriweather', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 16px 40px rgba(69, 26, 3, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bgMain text-textBody font-sans antialiased min-h-screen">
+
+  <!-- Header -->
+  <header id="header" class="sticky top-0 z-50 bg-bgMain/85 backdrop-blur border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <a href="#hero" class="inline-flex items-center gap-2 text-textHead font-serif font-bold text-xl tracking-wide">
+        <i class="fa-solid fa-hand text-primary"></i>
+        LushaStudio
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-textHead font-medium">
+        <a href="#problem" class="hover:text-primary transition focus:outline-none focus:ring-4 focus:ring-primary/15 rounded-lg px-2 py-1">Что это</a>
+        <a href="#showcase" class="hover:text-primary transition focus:outline-none focus:ring-4 focus:ring-primary/15 rounded-lg px-2 py-1">Набор 6-в-1</a>
+        <a href="#materials" class="hover:text-primary transition focus:outline-none focus:ring-4 focus:ring-primary/15 rounded-lg px-2 py-1">Материалы</a>
+        <a href="#faq" class="hover:text-primary transition focus:outline-none focus:ring-4 focus:ring-primary/15 rounded-lg px-2 py-1">FAQ</a>
+        <a href="#offer" class="bg-primary hover:bg-primaryHover text-white font-semibold px-6 py-2.5 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-primary/25">
+          Заказать
+        </a>
+      </nav>
+
+      <button id="mobileMenuBtn" class="md:hidden text-textHead text-2xl focus:outline-none focus:ring-4 focus:ring-primary/20 rounded-xl px-3 py-2" aria-controls="mobileMenu" aria-expanded="false" aria-label="Открыть меню">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-black/5 bg-bgMain">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-2 text-textHead font-medium">
+        <a class="mobileLink py-2 rounded-xl px-3 hover:bg-bgAlt/70 transition" href="#problem">Что это</a>
+        <a class="mobileLink py-2 rounded-xl px-3 hover:bg-bgAlt/70 transition" href="#showcase">Набор 6-в-1</a>
+        <a class="mobileLink py-2 rounded-xl px-3 hover:bg-bgAlt/70 transition" href="#materials">Материалы</a>
+        <a class="mobileLink py-2 rounded-xl px-3 hover:bg-bgAlt/70 transition" href="#faq">FAQ</a>
+        <a class="mobileLink mt-2 text-center bg-primary text-white font-semibold py-3 rounded-xl shadow-lg shadow-amber-900/10" href="#offer">Заказать за 1200 грн</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="max-w-7xl mx-auto px-4 sm:px-6 py-14 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="flex flex-wrap gap-2">
+        <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+          <i class="fa-solid fa-check text-primary"></i> 6 предметов в наборе
+        </span>
+        <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+          <i class="fa-solid fa-heart text-primary"></i> Ручная работа
+        </span>
+        <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+          <i class="fa-solid fa-truck text-primary"></i> Доставка по Украине
+        </span>
+      </div>
+
+      <h1 class="mt-6 font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-textHead leading-tight">
+        Уютный фокус в руках — <span class="text-primary">без детских игрушек</span>
+      </h1>
+      <p class="mt-6 text-base md:text-lg leading-relaxed max-w-xl">
+        Набор из 6 вязаных фиджетов ручной работы. Чтобы занять руки, мягко снять напряжение и легче удерживать внимание — дома, на учебе и на созвонах.
+      </p>
+
+      <div class="mt-9 flex flex-col sm:flex-row gap-3">
+        <a href="#offer" class="bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 text-center focus:outline-none focus:ring-4 focus:ring-primary/25">
+          Заказать за 1200 грн
+        </a>
+        <a href="#showcase" class="border border-black/15 hover:border-black/30 text-textHead font-semibold py-3 px-7 rounded-full transition text-center focus:outline-none focus:ring-4 focus:ring-primary/20">
+          Посмотреть, что внутри
+        </a>
+      </div>
+
+      <p class="mt-5 text-sm text-black/60 max-w-xl">
+        Не является медицинским изделием и не обещает лечебного эффекта.
+      </p>
+    </div>
+
+    <div class="relative">
+      <img
+        class="w-full rounded-3xl shadow-soft border-4 border-white"
+        src="images/fidgets-set.avif"
+        alt="Набор вязаных фиджетов ручной работы"
+      />
+      <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-lg border border-black/5 p-4 hidden lg:block">
+        <div class="flex items-center gap-2 text-textHead font-semibold">
+          <i class="fa-solid fa-gift text-primary"></i>
+          Идея подарка “забота о себе”
+        </div>
+        <p class="mt-1 text-sm text-black/60">Уточним упаковку и добавим открытку (если доступно)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="py-14 md:py-20 bg-white border-y border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Знакомо?</h2>
+        <p class="mt-4 text-base md:text-lg leading-relaxed">
+          Бывает, что мозгу нужно “занять руки”, чтобы думать спокойнее: на созвоне, во время учебы, в дороге. И тогда мы щелкаем ручкой, тянемся к телефону или крутим провод.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-bgAlt/60 rounded-2xl p-6 border border-border">
+          <div class="text-primary text-xl"><i class="fa-solid fa-headset"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Созвоны и работа</h3>
+          <p class="mt-2 text-black/70">Чтобы меньше отвлекаться и не “разносить” тревогу на таски.</p>
+        </div>
+        <div class="bg-bgAlt/60 rounded-2xl p-6 border border-border">
+          <div class="text-primary text-xl"><i class="fa-solid fa-book-open"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Учеба и подготовка</h3>
+          <p class="mt-2 text-black/70">Когда надо сидеть долго и удерживать внимание на одном.</p>
+        </div>
+        <div class="bg-bgAlt/60 rounded-2xl p-6 border border-border">
+          <div class="text-primary text-xl"><i class="fa-solid fa-train-subway"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Дорога и ожидание</h3>
+          <p class="mt-2 text-black/70">Чтобы занять руки и пережить очередь/поездку спокойнее.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-3">
+        <a href="#showcase" class="border border-black/15 hover:border-black/30 text-textHead font-semibold py-3 px-7 rounded-full transition text-center focus:outline-none focus:ring-4 focus:ring-primary/20">
+          Посмотреть набор 6-в-1
+        </a>
+        <a href="#offer" class="bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 text-center focus:outline-none focus:ring-4 focus:ring-primary/25">
+          Заказать
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it helps -->
+  <section id="how-it-helps" class="py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Как это может помогать (без магии)</h2>
+        <p class="mt-4 text-base md:text-lg leading-relaxed">
+          Это не медицинский продукт. Но многим людям проще держать фокус, когда руки заняты чем-то приятным и повторяющимся.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-hand"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Занятые руки</h3>
+          <p class="mt-2 text-black/70">Меньше импульса отвлечься на телефон или щёлканье ручкой.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-repeat"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Ритм и повторение</h3>
+          <p class="mt-2 text-black/70">Монотонные движения часто помогают “собраться” и не расплескаться.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-layer-group"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">6 ощущений</h3>
+          <p class="mt-2 text-black/70">Меняйте фиджеты под задачу и настроение — найдите свой “якорь”.</p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <a href="#offer" class="inline-flex items-center justify-center bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-primary/25">
+          Выбрать набор <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section id="showcase" class="py-14 md:py-20 bg-white border-y border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Что внутри набора 6-в-1</h2>
+        <p class="mt-4 text-base md:text-lg leading-relaxed">
+          Шесть разных фиджетов — от совсем тихих до “чуть с характером”. Меняйте их под задачу и настроение.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+              <i class="fa-solid fa-dice-d20 text-primary"></i> Flexagon
+            </span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-textHead">Флексагон</h3>
+          <p class="mt-2 text-black/70">Переворачивается и “перетекает” в руках — для тех, кто любит непрерывное движение.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+              <i class="fa-solid fa-infinity text-primary"></i> Möbius
+            </span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-textHead">Петля Мёбиуса</h3>
+          <p class="mt-2 text-black/70">Бесконечная лента для перебора пальцами — простой, спокойный фиджет.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+              <i class="fa-solid fa-seedling text-primary"></i> Pop
+            </span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-textHead">Гриб-брелок</h3>
+          <p class="mt-2 text-black/70">Растягивается “гармошкой” и даёт лёгкий поп-эффект (звук зависит от силы).</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+              <i class="fa-solid fa-cookie-bite text-primary"></i> Cozy
+            </span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-textHead">Пончик (вязаный Pop-it)</h3>
+          <p class="mt-2 text-black/70">Мягкая тактильная альтернатива пластиковым поп-итам — приятно нажимается.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+              <i class="fa-solid fa-bolt text-primary"></i> Click
+            </span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-textHead">Click-Clack</h3>
+          <p class="mt-2 text-black/70">Чуть щёлкает при сгибании — для тех, кому нужен “клик”. (Громкость зависит от окружения.)</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+              <i class="fa-solid fa-link text-primary"></i> Worry
+            </span>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-textHead">Worry Worm</h3>
+          <p class="mt-2 text-black/70">Внутри шарик, который можно перекатывать по всей длине — залипательно и успокаивающе.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-3">
+        <a href="#offer" class="bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 text-center focus:outline-none focus:ring-4 focus:ring-primary/25">
+          Заказать набор
+        </a>
+        <a href="#faq" class="border border-black/15 hover:border-black/30 text-textHead font-semibold py-3 px-7 rounded-full transition text-center focus:outline-none focus:ring-4 focus:ring-primary/20">
+          Вопросы по доставке и уходу
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Materials -->
+  <section id="materials" class="py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Материалы и качество</h2>
+        <p class="mt-4 text-base md:text-lg leading-relaxed">
+          Мы делаем так, чтобы это было приятно держать, не стыдно подарить и не страшно носить с собой.
+        </p>
+
+        <ul class="mt-8 space-y-4">
+          <li class="flex gap-3">
+            <span class="mt-1 text-secondary"><i class="fa-solid fa-circle-check"></i></span>
+            <div>
+              <p class="font-semibold text-textHead">Премиальная пряжа (хлопок/акрил)</p>
+              <p class="text-black/70">Мягкая фактура, комфортная для рук.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-secondary"><i class="fa-solid fa-circle-check"></i></span>
+            <div>
+              <p class="font-semibold text-textHead">Гипоаллергенный наполнитель</p>
+              <p class="text-black/70">Держит форму и не “комкуется”.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-secondary"><i class="fa-solid fa-circle-check"></i></span>
+            <div>
+              <p class="font-semibold text-textHead">Ручная сборка и проверка</p>
+              <p class="text-black/70">Каждый набор проходит через руки мастера.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="mt-10">
+          <a href="#faq" class="inline-flex items-center justify-center border border-black/15 hover:border-black/30 text-textHead font-semibold py-3 px-7 rounded-full transition focus:outline-none focus:ring-4 focus:ring-primary/20">
+            FAQ по уходу <i class="fa-solid fa-arrow-right ml-2 text-primary"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img class="w-full rounded-3xl shadow-lg border-4 border-white" src="https://placehold.co/900x780/FEF3C7/451A03?text=Texture+Close-up" alt="Крупный план фактуры вязаных игрушек" />
+        <div class="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-lg border border-black/5 p-4 hidden lg:block">
+          <div class="flex items-center gap-2 text-textHead font-semibold">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            14+ (по входным данным)
+          </div>
+          <p class="mt-1 text-sm text-black/60">Уточним предупреждения по безопасности и уходу</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Handmade -->
+  <section id="handmade" class="py-14 md:py-20 bg-white border-y border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Почему ручная работа — это плюс</h2>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-user-tie"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Взрослая эстетика</h3>
+          <p class="mt-2 text-black/70">Выглядит как аккуратный аксессуар, а не яркая игрушка “для детей”.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-feather"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Уютная тактильность</h3>
+          <p class="mt-2 text-black/70">Вязаная фактура — мягкая, тёплая и приятная для постоянного контакта.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-layer-group"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">6-в-1 выгоднее</h3>
+          <p class="mt-2 text-black/70">Не нужно покупать “пять разных фиджетов”, чтобы найти свой.</p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <a href="#offer" class="inline-flex items-center justify-center bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-primary/25">
+          Заказать за 1200 грн
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section id="comparison" class="py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Сравнение: уютная вещь vs. массовые фиджеты</h2>
+        <p class="mt-4 text-base md:text-lg leading-relaxed">
+          Мы не “воюем” с пластиком — он просто другой. Если вам важно, чтобы фиджет выглядел по-взрослому, был приятным на ощупь и давал разные ощущения в одном наборе — тогда LushaStudio подходит лучше.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-store"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Массовый пластик/силикон</h3>
+          <ul class="mt-3 space-y-2 text-black/70">
+            <li class="flex gap-2"><span class="text-black/40">•</span><span>часто дешево и ярко</span></li>
+            <li class="flex gap-2"><span class="text-black/40">•</span><span>может быть шумно в офисе/аудитории</span></li>
+            <li class="flex gap-2"><span class="text-black/40">•</span><span>дизайн иногда “детский”</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-microchip"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Электронные/интерактивные</h3>
+          <ul class="mt-3 space-y-2 text-black/70">
+            <li class="flex gap-2"><span class="text-black/40">•</span><span>много режимов и “фишек”</span></li>
+            <li class="flex gap-2"><span class="text-black/40">•</span><span>иногда больше внимания уходит на гаджет</span></li>
+            <li class="flex gap-2"><span class="text-black/40">•</span><span>не всем нравится ощущение “пластика”</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-bgAlt/60 rounded-2xl p-6 border border-border">
+          <div class="text-primary text-xl"><i class="fa-solid fa-hand text-primary"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">LushaStudio (handmade 6-в-1)</h3>
+          <ul class="mt-3 space-y-2 text-black/70">
+            <li class="flex gap-2"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>уютная фактура и взрослая эстетика</span></li>
+            <li class="flex gap-2"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>6 разных предметов → выбирайте ощущение под задачу</span></li>
+            <li class="flex gap-2"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>handmade: аккуратная сборка и “вещь”, а не одноразовый пластик</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-3">
+        <a href="#showcase" class="border border-black/15 hover:border-black/30 text-textHead font-semibold py-3 px-7 rounded-full transition text-center focus:outline-none focus:ring-4 focus:ring-primary/20">
+          Посмотреть набор 6-в-1
+        </a>
+        <a href="#offer" class="bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 text-center focus:outline-none focus:ring-4 focus:ring-primary/25">
+          Заказать
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maker -->
+  <section id="maker" class="py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Сделано вручную в Украине</h2>
+        <p class="mt-4 text-base md:text-lg leading-relaxed">
+          Это небольшой handmade-проект. Каждый набор проходит через руки мастера — от выбора пряжи до сборки и упаковки.
+        </p>
+        <div class="mt-8 bg-bgAlt/60 rounded-2xl p-6 border border-border">
+          <p class="text-textHead font-semibold">Чтобы сделать этот блок сильнее</p>
+          <p class="mt-1 text-black/70">Добавьте 2–3 фото процесса/мастерской и 1 короткую цитату “почему мы это делаем”.</p>
+        </div>
+      </div>
+      <div>
+        <img class="w-full rounded-3xl shadow-lg border-4 border-white" src="images/product-in-hands.avif" alt="Фото процесса создания набора (плейсхолдер)" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section id="use-cases" class="py-14 md:py-20 bg-white border-y border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Где набор особенно выручает</h2>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-video"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Созвоны</h3>
+          <p class="mt-2 text-black/70">Помогает занять руки и слушать внимательнее.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Учеба</h3>
+          <p class="mt-2 text-black/70">Когда нужно “досидеть” и не сорваться в прокрастинацию.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-person-walking"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Дорога</h3>
+          <p class="mt-2 text-black/70">Чтобы спокойно пережить ожидание и не залипать в ленту.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary text-xl"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3 class="mt-3 text-xl font-semibold text-textHead">Вечер дома</h3>
+          <p class="mt-2 text-black/70">Мягкая тактильность вместо бесконечного скролла.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">Отзывы</h2>
+        <p class="mt-4 text-base md:text-lg leading-relaxed">
+          Ниже — примеры-макеты. Замените на реальные отзывы и фото покупателей: это сильнее всего помогает выбрать.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <figure class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary"><i class="fa-solid fa-quote-left"></i></div>
+          <blockquote class="mt-3 text-black/80">“Очень приятная фактура. Держу на столе, реально меньше щёлкаю ручкой.”</blockquote>
+          <figcaption class="mt-4 text-sm text-black/60">Анна • макет</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary"><i class="fa-solid fa-quote-left"></i></div>
+          <blockquote class="mt-3 text-black/80">“Классный подарок: выглядит уютно, и правда хочется трогать.”</blockquote>
+          <figcaption class="mt-4 text-sm text-black/60">Олег • макет</figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
+          <div class="text-primary"><i class="fa-solid fa-quote-left"></i></div>
+          <blockquote class="mt-3 text-black/80">“Нравится, что их много — меняю под настроение.”</blockquote>
+          <figcaption class="mt-4 text-sm text-black/60">Ирина • макет</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-14 md:py-20 bg-white border-y border-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <h2 class="font-serif font-bold text-3xl md:text-4xl text-textHead">FAQ: доставка, оплата, уход</h2>
+      </div>
+
+      <div class="mt-10 max-w-3xl space-y-3">
+        <details class="group bg-bgAlt/60 rounded-2xl border border-border p-5">
+          <summary class="cursor-pointer list-none flex items-center justify-between gap-4 text-textHead font-semibold">
+            Доставка
+            <span class="text-primary group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-black/70">По Украине: Новая Почта и УкрПочта (по входным данным). Точный тариф зависит от города и перевозчика.</p>
+        </details>
+
+        <details class="group bg-bgAlt/60 rounded-2xl border border-border p-5">
+          <summary class="cursor-pointer list-none flex items-center justify-between gap-4 text-textHead font-semibold">
+            Сроки
+            <span class="text-primary group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-black/70">Зависит от наличия/изготовления. После заявки уточним сроки и согласуем отправку.</p>
+        </details>
+
+        <details class="group bg-bgAlt/60 rounded-2xl border border-border p-5">
+          <summary class="cursor-pointer list-none flex items-center justify-between gap-4 text-textHead font-semibold">
+            Оплата
+            <span class="text-primary group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-black/70">Уточним удобный способ оплаты при оформлении заказа.</p>
+        </details>
+
+        <details class="group bg-bgAlt/60 rounded-2xl border border-border p-5">
+          <summary class="cursor-pointer list-none flex items-center justify-between gap-4 text-textHead font-semibold">
+            Уход
+            <span class="text-primary group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-black/70">
+            Добавим точную инструкцию по стирке/сушке. Пожалуйста, уточните ограничения для элементов с металлом/деревом (если они есть в конкретной комплектации).
+          </p>
+        </details>
+
+        <details class="group bg-bgAlt/60 rounded-2xl border border-border p-5">
+          <summary class="cursor-pointer list-none flex items-center justify-between gap-4 text-textHead font-semibold">
+            Безопасность
+            <span class="text-primary group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-black/70">Рекомендовано 14+ (по входным данным). Если есть мелкие детали — добавим предупреждение.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer -->
+  <section id="offer" class="py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <div class="bg-white rounded-3xl p-7 md:p-8 shadow-lg border border-black/5">
+        <div class="inline-flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-bgAlt text-textHead border border-border">
+          <i class="fa-solid fa-tag text-primary"></i>
+          Цена набора
+        </div>
+        <h2 class="mt-4 font-serif font-bold text-3xl md:text-4xl text-textHead">1200 грн</h2>
+        <p class="mt-3 text-black/70">Набор 6-в-1 + доставка по Украине (НП/УкрПочта)</p>
+
+        <div class="mt-6 bg-bgAlt/60 rounded-2xl p-6 border border-border">
+          <p class="text-textHead font-semibold">В наборе:</p>
+          <ul class="mt-4 space-y-3 text-black/80">
+            <li class="flex gap-3"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>Флексагон</span></li>
+            <li class="flex gap-3"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>Петля Мёбиуса</span></li>
+            <li class="flex gap-3"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>Гриб-брелок</span></li>
+            <li class="flex gap-3"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>Пончик (вязаный Pop-it)</span></li>
+            <li class="flex gap-3"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>Click-Clack</span></li>
+            <li class="flex gap-3"><span class="text-secondary mt-0.5"><i class="fa-solid fa-circle-check"></i></span><span>Worry Worm (шарик внутри)</span></li>
+          </ul>
+        </div>
+
+        <p class="mt-6 text-sm text-black/60">
+          Не медицинский продукт. Если у вас есть вопросы — напишите, поможем выбрать.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-7 md:p-8 shadow-lg border border-black/5">
+        <h3 class="text-xl font-semibold text-textHead">Оставьте заявку</h3>
+        <p class="mt-2 text-black/70">Мы уточним цвет/наличие/доставку и подскажем, как оформить оплату.</p>
+
+        <form id="orderForm" class="mt-6 space-y-4">
+          <label class="block">
+            <span class="text-sm font-medium text-textHead">Имя</span>
+            <input class="mt-2 w-full bg-white border border-black/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-primary/20" name="name" autocomplete="name" placeholder="Например, Катя" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium text-textHead">Контакт (телефон/Telegram/Instagram)</span>
+            <input class="mt-2 w-full bg-white border border-black/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-primary/20" name="contact" autocomplete="tel" placeholder="+380… / @username" required />
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <label class="block">
+              <span class="text-sm font-medium text-textHead">Город</span>
+              <input class="mt-2 w-full bg-white border border-black/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-primary/20" name="city" placeholder="Киев" />
+            </label>
+            <label class="block">
+              <span class="text-sm font-medium text-textHead">Доставка</span>
+              <select class="mt-2 w-full bg-white border border-black/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-primary/20" name="delivery">
+                <option value="Новая Почта">Новая Почта</option>
+                <option value="УкрПочта">УкрПочта</option>
+                <option value="Не знаю">Не знаю</option>
+              </select>
+            </label>
+          </div>
+          <label class="block">
+            <span class="text-sm font-medium text-textHead">Комментарий (цвет, “тише/без click-clack”, подарок и т.п.)</span>
+            <textarea class="mt-2 w-full bg-white border border-black/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-4 focus:ring-primary/20 min-h-[110px]" name="note" placeholder="Хочу бежево-зеленую гамму, если есть. Нужна подарочная упаковка."></textarea>
+          </label>
+
+          <button class="w-full bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-primary/25" type="submit">
+            Сформировать текст заявки
+          </button>
+
+          <p class="text-sm text-black/60">
+            После нажатия появится текст заявки — его можно скопировать и отправить продавцу в удобном канале.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="border-t border-black/5 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div>
+        <div class="inline-flex items-center gap-2 text-textHead font-serif font-bold text-xl">
+          <i class="fa-solid fa-hand text-primary"></i> LushaStudio
+        </div>
+        <p class="mt-3 text-sm text-black/60 max-w-sm">
+          Уютные тактильные вещи ручной работы. Добавьте сюда ссылку на Instagram/Telegram/сайт и контакты для заказа.
+        </p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-textHead">Разделы</p>
+        <ul class="mt-3 space-y-2 text-sm text-black/70">
+          <li><a class="hover:text-primary transition" href="#problem">Что это</a></li>
+          <li><a class="hover:text-primary transition" href="#showcase">Набор 6-в-1</a></li>
+          <li><a class="hover:text-primary transition" href="#materials">Материалы</a></li>
+          <li><a class="hover:text-primary transition" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-textHead">Контакты</p>
+        <ul class="mt-3 space-y-2 text-sm text-black/70">
+          <li><span class="text-black/60">Instagram:</span> <span class="text-black/40">добавить ссылку</span></li>
+          <li><span class="text-black/60">Telegram:</span> <span class="text-black/40">добавить ссылку</span></li>
+          <li><span class="text-black/60">Email:</span> <span class="text-black/40">добавить адрес</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 pt-6 border-t border-black/5 text-xs text-black/50">
+      <p>© <span id="year"></span> LushaStudio. Не является медицинским изделием и не обещает лечебного эффекта.</p>
+    </div>
+  </footer>
+
+  <!-- Order Modal -->
+  <div id="orderModal" class="hidden fixed inset-0 z-[60]">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative min-h-full flex items-center justify-center p-4">
+      <div class="w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-black/10 p-6 md:p-7">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h4 class="text-xl font-semibold text-textHead">Текст заявки</h4>
+            <p class="mt-1 text-sm text-black/60">Скопируйте и отправьте продавцу (Instagram/Telegram/мессенджер).</p>
+          </div>
+          <button id="closeModalBtn" class="text-textHead/70 hover:text-textHead transition px-3 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-primary/20" aria-label="Закрыть">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <div class="mt-4">
+          <textarea id="orderText" class="w-full bg-bgAlt/40 border border-black/10 rounded-2xl px-4 py-3 min-h-[180px] focus:outline-none focus:ring-4 focus:ring-primary/20"></textarea>
+        </div>
+
+        <div class="mt-4 flex flex-col sm:flex-row gap-3">
+          <button id="copyBtn" class="bg-primary hover:bg-primaryHover text-white font-semibold py-3 px-7 rounded-full shadow-lg shadow-amber-900/10 transition focus:outline-none focus:ring-4 focus:ring-primary/25">
+            Скопировать
+          </button>
+          <button id="closeModalBtn2" class="border border-black/15 hover:border-black/30 text-textHead font-semibold py-3 px-7 rounded-full transition focus:outline-none focus:ring-4 focus:ring-primary/20">
+            Закрыть
+          </button>
+        </div>
+
+        <p id="copyStatus" class="mt-3 text-sm text-black/60"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobileLink');
+
+    function setMenuOpen(isOpen) {
+      mobileMenu.classList.toggle('hidden', !isOpen);
+      mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      setMenuOpen(!isOpen);
+    });
+
+    mobileLinks.forEach((link) => link.addEventListener('click', () => setMenuOpen(false)));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const orderForm = document.getElementById('orderForm');
+    const orderModal = document.getElementById('orderModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const closeModalBtn2 = document.getElementById('closeModalBtn2');
+    const orderText = document.getElementById('orderText');
+    const copyBtn = document.getElementById('copyBtn');
+    const copyStatus = document.getElementById('copyStatus');
+
+    function openModal() {
+      orderModal.classList.remove('hidden');
+      copyStatus.textContent = '';
+      orderText.focus();
+      orderText.setSelectionRange(0, 0);
+    }
+
+    function closeModal() {
+      orderModal.classList.add('hidden');
+    }
+
+    closeModalBtn.addEventListener('click', closeModal);
+    closeModalBtn2.addEventListener('click', closeModal);
+    orderModal.addEventListener('click', (event) => {
+      if (event.target === orderModal.firstElementChild) closeModal();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !orderModal.classList.contains('hidden')) closeModal();
+    });
+
+    orderForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(orderForm);
+      const name = String(data.get('name') || '').trim();
+      const contact = String(data.get('contact') || '').trim();
+      const city = String(data.get('city') || '').trim();
+      const delivery = String(data.get('delivery') || '').trim();
+      const note = String(data.get('note') || '').trim();
+
+      const lines = [
+        'Здравствуйте! Хочу заказать набор вязаных фиджетов LushaStudio (6-в-1).',
+        '',
+        `Имя: ${name}`,
+        `Контакт: ${contact}`,
+        city ? `Город: ${city}` : null,
+        delivery ? `Доставка: ${delivery}` : null,
+        note ? `Комментарий: ${note}` : null,
+        '',
+        'Подскажите, пожалуйста:',
+        '- есть ли варианты цветов/комплектации (можно ли “тихий набор”)?',
+        '- сроки изготовления/отправки и способы оплаты?',
+        '',
+        'Спасибо!',
+      ].filter(Boolean);
+
+      orderText.value = lines.join('\n');
+      openModal();
+    });
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(orderText.value);
+        copyStatus.textContent = 'Скопировано в буфер обмена.';
+      } catch (e) {
+        orderText.select();
+        document.execCommand('copy');
+        copyStatus.textContent = 'Скопировано (fallback).';
+      }
+    });
+  </script>
+</body>
+</html>
